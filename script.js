@@ -7,5 +7,5 @@ const sentence = {
 const generateRandomNumber = (num)=>{
     return Math.floor(Math.random()*num)
 };
-
+console.log('I dit it!!')
 
