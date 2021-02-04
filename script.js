@@ -7,5 +7,17 @@ const sentence = {
 const generateRandomNumber = (num)=>{
     return Math.floor(Math.random()*num)
 };
-console.log('I dit it!!')
 
+const generatePhrase = (sentence)=>{
+    let phrase = [];
+    
+    for (word in sentence){
+        let randomNum = generateRandomNumber(sentence[word].length);
+        phrase.push(sentence[word][randomNum]);
+    }
+    return phrase.join(' ');
+
+};
+
+console.log(generatePhrase(sentence));
+ 
